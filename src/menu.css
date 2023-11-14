@@ -1,3 +1,7 @@
+:root {
+  --font-family: 'Nanum Gothic Coding', monospace;
+}
+
 .principal {
   display: flex;
 }
@@ -29,10 +33,10 @@ p.preco-hamburguer {
 
 header {
   position: relative;
-  height: 300px;
+  height: 60vh;
   color: #fff;
   text-align: center;
-  padding: 20px;
+  padding: 2rem;
 }
 
 
@@ -79,8 +83,8 @@ li a {
 h3 {
   margin: 0;
   padding: 1rem;
-  font-size: 1.5rem;
-  font-weight: 390;
+  font-size: 1.7rem;
+  font-family: var(--font-family);
   color: #fff;
   background-color: #a20000;
 }
@@ -89,3 +93,9 @@ ul,
 h3 {
   border: 1px solid #a20000;
 }
+
+/* @media screen and (min-width: 500px) and (max-width: 600px) {
+  h3 {
+      color: aqua;
+  }
+} */
