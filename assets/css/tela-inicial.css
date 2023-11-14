@@ -46,8 +46,7 @@ body {
 }
 
 #iniciar-pedido:hover {
-  filter: brightness(92%);
-  border-radius: 50px;
+  border-radius: 52px;
   border-bottom: 5px solid var(--color-white);
   border-top: 5px solid var(--color-white);
 }
