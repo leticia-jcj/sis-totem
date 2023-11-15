@@ -9,10 +9,9 @@
 .opcoes-hamburguer {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: space-evenly;
   gap: 2rem;
   margin-top: 2rem;
-  margin-left: 2rem;
 }
 
 .card-hamburguer {
