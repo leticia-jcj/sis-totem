@@ -2,6 +2,18 @@
   --font-family: 'Nanum Gothic Coding', monospace;
 }
 
+.carrinho {
+  display: flex;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  justify-content: flex-end;
+}
+
+.carrinho img {
+  margin-right: 1rem;
+}
+
 .principal {
   display: flex;
 }
@@ -30,14 +42,33 @@ p.preco-hamburguer {
   font-size: 1.8rem;
 }
 
+label.label-card {
+  font-weight: 500;  
+}
+
+input.input-card {
+  border: 1px solid #a200006b;
+  margin-bottom: 0.5rem;
+}
+
+input.input-card:focus {
+  border: 1px solid #a20000;
+  box-shadow: 0 0 0 0;
+  outline: 0;
+}
+
+button {
+  width: 16rem;
+}
+
 header {
   position: relative;
-  height: 60vh;
+  height: 58vh;
   color: #fff;
   text-align: center;
   padding: 2rem;
-}
 
+}
 
 header::before {
   content: '';
@@ -54,11 +85,12 @@ header::before {
 
 header a {
   display: block;
-  height: 100%; /* faz o link ocupar toda a altura do cabeçalho */
+  height: 100%;
+  /* faz o link ocupar toda a altura do cabeçalho */
 }
 
 aside {
-  height: auto;
+  width: 25vw;
 }
 
 ul.card-aside {
@@ -92,6 +124,13 @@ ul,
 h3 {
   border: 1px solid #a20000;
 }
+
+footer > a {
+  padding: 1rem;
+}
+/*estilo pagina carrinho*/
+
+
 
 /* @media screen and (min-width: 500px) and (max-width: 600px) {
   h3 {
