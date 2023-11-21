@@ -1,5 +1,8 @@
 :root {
-  --font-family: 'Nanum Gothic Coding', monospace;
+  --font-family: "Nanum Gothic Coding", monospace;
+  --color-orange: #ff914d;
+  --color-terracota: #a20000;
+  --color-white: #fff;
 }
 
 .carrinho {
@@ -10,10 +13,6 @@
   justify-content: flex-end;
 }
 
-.carrinho img {
-  margin-right: 1rem;
-}
-
 .principal {
   display: flex;
 }
@@ -21,7 +20,7 @@
 .opcoes-hamburguer {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-evenly;
+  justify-content: space-around;
   gap: 2rem;
   margin-top: 2rem;
   margin-bottom: 7rem;
@@ -38,45 +37,24 @@
   overflow: hidden;
 }
 
-p.preco-hamburguer {
-  font-weight: 500;
-  font-size: 1.8rem;
-}
-
-label.label-card {
-  font-weight: 500;  
-}
-
-input.input-card {
-  border: 1px solid #a200006b;
-  margin-bottom: 0.5rem;
-}
-
-input.input-card:focus {
-  border: 1px solid #a20000;
-  box-shadow: 0 0 0 0;
-  outline: 0;
-}
-
-button {
-  width: 16rem;
+.carrinho img {
+  margin-right: 1rem;
 }
 
 header {
   position: relative;
   height: 58vh;
-  color: #fff;
+  color: var(--color-white);
   text-align: center;
   padding: 2rem;
-
 }
 
 header::before {
-  content: '';
+  content: "";
   position: absolute;
   top: 0;
   left: 0;
-  background-image: url('/assets/img/banner-simples.png');
+  background-image: url("/assets/img/banner-simples.png");
   background-size: cover;
   background-position: center;
   width: 100%;
@@ -88,10 +66,6 @@ header a {
   display: block;
   height: 100%;
   /* faz o link ocupar toda a altura do cabeçalho */
-}
-
-aside {
-  width: 25vw;
 }
 
 ul.card-aside {
@@ -117,21 +91,85 @@ h3 {
   padding: 1rem;
   font-size: 1.7rem;
   font-family: var(--font-family);
-  color: #fff;
-  background-color: #a20000;
+  color: var(--color-white);
+  background-color: var(--color-terracota);
 }
 
 ul,
 h3 {
-  border: 1px solid #a20000;
+  border: 1px solid var(--color-terracota);
 }
+
+p.preco-hamburguer {
+  font-weight: 500;
+  font-size: 1.8rem;
+}
+
+label.label-card {
+  font-weight: 500;
+}
+
+button {
+  width: 16rem;
+}
+
+/*botão aumentar e dimunuir card*/
+
+button.aumentar,
+button.diminuir {
+  background-color: var(--color-orange);
+  width: 3rem;
+  height: 2rem;
+  margin-bottom: 0.5rem;
+  border: none;
+  border-radius: 8px;
+  color: #fff;
+  font-size: 1.3rem;
+  font-weight: bold;
+  
+}
+
+button.aumentar {
+  margin-left: 3rem;
+}
+
+
+input {
+  /* border: 1px solid var(--color-orange); */
+  border: none;
+  border-bottom: 2px solid var(--color-orange);
+  width: 3vw;
+  height: 3vh;
+  margin-left: .2rem;
+  margin-right: .2rem;
+  border-radius: 6px;
+  text-align: center;
+  font-size: 1.5rem;
+  font-weight: 500;
+  color: var(--color-orange);
+  outline: 0;
+
+}
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type="number"] {
+  -moz-appearance: textfield; /* Firefox */
+}
+
+/* aside {
+  width: 25vw;
+} */
 
 footer > a {
   padding: 1rem;
 }
+
 /*estilo pagina carrinho*/
-
-
 
 /* @media screen and (min-width: 500px) and (max-width: 600px) {
   h3 {

@@ -84,11 +84,14 @@
                         <h5 class="card-title">Sanduíche de Atum</h5>
                         <p class="card-text">Pão integral, atum, tomate e alface.</p>
                         <p class="preco-hamburguer">R$ 8,99</p>
-                        <div class="">
-                            <label class="form-label label-card" for="typeNumber">Quantidade
-                            </label>
-                            <input type="number" id="typeNumber" class="form-control input-card" />
+                        
+                        <div>
+                            <button class="aumentar" onclick="decrement()">-</button>
+                            <input type="number" id="quantity" name="quantity" value="1" min="1"
+                                oninput="validateInput()">
+                            <button id="button" class="diminuir" onclick="increment()">+</button>
                         </div>
+
                         <button id="sanduiche-de-atum" onclick="clicar()"  class="btn btn-danger">adicinar ao carrinho</button>
                     </div>
                 </div>
@@ -100,10 +103,11 @@
                         <h5 class="card-title">Peito de Perú</h5>
                         <p class="card-text">Pão na chapa, peito de perú e queijo.</p>
                         <p class="preco-hamburguer">R$ 11,99</p>
-                        <div class="">
-                            <label class="form-label label-card" for="typeNumber">Quantidade
-                            </label>
-                            <input type="number" id="typeNumber" class="form-control input-card" />
+                        <div>
+                            <button class="aumentar" onclick="decrement()">-</button>
+                            <input type="number" id="quantity" name="quantity" value="1" min="1"
+                                oninput="validateInput()">
+                            <button id="button" class="diminuir" onclick="increment()">+</button>
                         </div>
                         <button id="peito-de-peru" onclick="clicar()"  class="btn btn-danger">adicinar ao carrinho</button>
                     </div>
@@ -116,10 +120,11 @@
                         <h5 class="card-title">Presunto e Queijo</h5>
                         <p class="card-text">Pão de fermentação natural na chapa, presunto e queijo.</p>
                         <p class="preco-hamburguer">R$ 12,99</p>
-                        <div class="">
-                            <label class="form-label label-card" for="typeNumber">Quantidade
-                            </label>
-                            <input type="number" id="typeNumber" class="form-control input-card" />
+                        <div>
+                            <button class="aumentar" onclick="decrement()">-</button>
+                            <input type="number" id="quantity" name="quantity" value="1" min="1"
+                                oninput="validateInput()">
+                            <button id="button" class="diminuir" onclick="increment()">+</button>
                         </div>
                         <button id="presunto-e-queijo" onclick="clicar()"  class="btn btn-danger">adicinar ao carrinho</button>
                     </div>
@@ -132,10 +137,11 @@
                         <h5 class="card-title">Sanduíche de Ricota</h5>
                         <p class="card-text">Pão integral, ricota fresca e cenoura ralada.</p>
                         <p class="preco-hamburguer">R$ 8,99</p>
-                        <div class="">
-                            <label class="form-label label-card" for="typeNumber">Quantidade
-                            </label>
-                            <input type="number" id="typeNumber" class="form-control input-card" />
+                        <div>
+                            <button class="aumentar" onclick="decrement()">-</button>
+                            <input type="number" id="quantity" name="quantity" value="1" min="1"
+                                oninput="validateInput()">
+                            <button id="button" class="diminuir" onclick="increment()">+</button>
                         </div>
                         <button id="sanduiche-de-ricota" onclick="clicar()"  class="btn btn-danger">adicinar ao carrinho</button>
                     </div>
@@ -149,10 +155,11 @@
                         <h5 class="card-title">Ricota com Rúcula</h5>
                         <p class="card-text">Pão de 7 grãos, ricota, rúcula e azeite.</p>
                         <p class="preco-hamburguer">R$ 9,99</p>
-                        <div class="">
-                            <label class="form-label label-card" for="typeNumber">Quantidade
-                            </label>
-                            <input type="number" id="typeNumber" class="form-control input-card" />
+                        <div>
+                            <button class="aumentar" onclick="decrement()">-</button>
+                            <input type="number" id="quantity" name="quantity" value="1" min="1"
+                                oninput="validateInput()">
+                            <button id="button" class="diminuir" onclick="increment()">+</button>
                         </div>
                         <button id="ricota-com-rucula" onclick="clicar()"  class="btn btn-danger">adicinar ao carrinho</button>
                     </div>
@@ -166,10 +173,11 @@
                         <h5 class="card-title">Mexicano</h5>
                         <p class="card-text">Pão de 7 grãos, guacamole, pimenta caiena e ovo.</p>
                         <p class="preco-hamburguer">R$ 15,99</p>
-                        <div class="">
-                            <label class="form-label label-card" for="typeNumber">Quantidade
-                            </label>
-                            <input type="number" id="typeNumber" class="form-control input-card" />
+                        <div>
+                            <button class="aumentar" onclick="decrement()">-</button>
+                            <input type="number" id="quantity" name="quantity" value="1" min="1"
+                                oninput="validateInput()">
+                            <button id="button" class="diminuir" onclick="increment()">+</button>
                         </div>
                         <button id="mexicano" onclick="clicar()"  class="btn btn-danger">adicinar ao carrinho</button>
                     </div>
