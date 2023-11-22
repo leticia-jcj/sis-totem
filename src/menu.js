@@ -1,52 +1,4 @@
-const buttonList = document.querySelectorAll('button')
-console.log(buttonList)
-
-buttonList.forEach((button) => {
-    button.addEventListener('click', ()=> {
-        console.log(`You clicked ${button.id}`)
-        //const qnt = document.getElementById(button.id + "qnt")
-       const quantidade = Number(button.parentNode.querySelector('.input-card').value)
-
-       const produtoSelecionado = itens.find(item => item.id === button.id)
-
-       produtoSelecionado.quantidade = quantidade
-       
-       adicionarItemNoCarrinho(produtoSelecionado)
-
-    })
-})
-
-
-function clicar(){
-
-}
-
-
-const carrinho = pegaItensDoLocalStorage()
-console.log(carrinho)
-
-function pegaItensDoLocalStorage() {
-    return JSON.parse(localStorage.getItem("carrinho")) || []
-}
-
-
-function atualizaLocalStorage() {
-    localStorage.setItem('carrinho', JSON.stringify(carrinho))
-}
-
-function adicionarItemNoCarrinho(produtoSelecionado) {
-    carrinho.push(produtoSelecionado)
-    atualizaLocalStorage()
-}
-
-function removerItemDoCarrinho(id) {
-    const index = carrinho.findIndex(it => it.id === id)
-    carrinho.splice(index, 1)
-    atualizaLocalStorage()
-}
-
-
-const itens = [
+const lanchesDisponiveis = [
     //hamburguer
     {
         id: 'x-bacon',
@@ -251,3 +203,75 @@ const itens = [
         preco: "6,99 "
     },
 ]
+const carrinho = pegaItensDoLocalStorage()
+
+const todosOsbotoes = document.querySelectorAll('button')
+
+
+
+
+
+todosOsbotoes.forEach((button) => {
+
+    const lancheDentroDoCarrinho = carrinho.find(item => item.id === button.dataset.produtoId)
+    if (lancheDentroDoCarrinho) {
+        const input = button.parentNode.querySelector('.input-card')
+
+        input.value = lancheDentroDoCarrinho.quantidade
+
+    }
+
+    button.addEventListener('click', () => {
+
+        const input = button.parentNode.querySelector('.input-card')
+
+        let quantidadeAtual = Number(input.value)
+
+        const lancheSelecionado = lanchesDisponiveis.find(item => item.id === button.dataset.produtoId)
+
+        if (button.classList.contains("aumentar")) {
+            quantidadeAtual++
+            input.value = quantidadeAtual
+
+        } else if (button.classList.contains("diminuir")) {
+            if (quantidadeAtual > 0) {
+                quantidadeAtual--
+                input.value = quantidadeAtual
+            }
+
+        } else if (quantidadeAtual > 0) {
+            lancheSelecionado.quantidade = quantidadeAtual
+            adicionarLancheNoCarrinho(lancheSelecionado)
+        }
+    })
+})
+
+
+
+function pegaItensDoLocalStorage() {
+    return JSON.parse(localStorage.getItem("carrinho")) || []
+}
+
+
+function atualizaLocalStorage() {
+    localStorage.setItem('carrinho', JSON.stringify(carrinho))
+}
+
+function adicionarLancheNoCarrinho(lancheSelecionado) {
+    const lancheEncontrado = carrinho.find(item => item.id === lancheSelecionado.id)
+    if (lancheEncontrado == undefined) {
+        carrinho.push(lancheSelecionado)
+    } else {
+        lancheEncontrado.quantidade = lancheSelecionado.quantidade
+    }
+
+    atualizaLocalStorage()
+}
+
+function removerLancheDoCarrinho(id) {
+    const index = carrinho.findIndex(it => it.id === id)
+    carrinho.splice(index, 1)
+    atualizaLocalStorage()
+}
+
+
