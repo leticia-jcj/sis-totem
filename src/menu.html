@@ -81,14 +81,16 @@
                         <p class="card-text">Carne, bacon, queijo, alface e tomate.</p>
                         <p class="preco-hamburguer">R$ 16,99</p>
             
-                        <div>
-                            <button class="aumentar" data-p onclick="decrement()">-</button>
-                            <input type="number" id="quantity" name="quantity" value="1" min="1"
-                                oninput="validateInput()">
-                            <button id="button" class="diminuir" onclick="increment()">+</button>
+                        <div class="div-card">
+                            <button data-produto-id="x-bacon" class="diminuir">-</button>
+                            <input type="number" class="form-control input-card" id="quantity" name="quantity" value="1"
+                                min="1">
+                            <button data-produto-id="x-bacon" class="aumentar">+</button>
                         </div>
 
-                        <button id="x-bacon" onclick="clicar()" class="btn btn-danger">adicinar ao carrinho</button>
+                        <button data-produto-id="x-bacon" class="btn btn-danger">adicinar ao carrinho
+                        </button>
+
                     </div>
                 </div>
 
@@ -99,14 +101,16 @@
                         <p class="card-text">Carne, queijo, alface, tomate e cebola</p>
                         <p class="preco-hamburguer">R$ 10,99</p>
 
-                        <div>
-                            <button class="aumentar" onclick="decrement()">-</button>
-                            <input type="number" id="quantity" name="quantity" value="1" min="1"
-                                oninput="validateInput()">
-                            <button id="button" class="diminuir" onclick="increment()">+</button>
+                        <div class="div-card">
+                            <button data-produto-id="x-salada" class="diminuir">-</button>
+                            <input type="number" class="form-control input-card" id="quantity" name="quantity" value="1"
+                                min="1">
+                            <button data-produto-id="x-salada" class="aumentar">+</button>
                         </div>
 
-                        <button id="x-salada" onclick="clicar()" class="btn btn-danger">adicinar ao carrinho</button>
+                        <button data-produto-id="x-salada" class="btn btn-danger">adicinar ao carrinho
+                        </button>
+
                     </div>
                 </div>
 
@@ -117,14 +121,16 @@
                         <p class="card-text">Frango empanado na farinha panko, bacon, queijo.</p>
                         <p class="preco-hamburguer">R$ 12,99</p>
                         
-                        <div>
-                            <button class="aumentar" onclick="decrement()">-</button>
-                            <input type="number" id="quantity" name="quantity" value="1" min="1"
-                                oninput="validateInput()">
-                            <button id="button" class="diminuir" onclick="increment()">+</button>
+                        <div class="div-card">
+                            <button data-produto-id="x-frango" class="diminuir">-</button>
+                            <input type="number" class="form-control input-card" id="quantity" name="quantity" value="1"
+                                min="1">
+                            <button data-produto-id="x-frango" class="aumentar">+</button>
                         </div>
 
-                        <button id="x-frango" onclick="clicar()" class="btn btn-danger">adicinar ao carrinho</button>
+                        <button data-produto-id="x-frango" class="btn btn-danger">adicinar ao carrinho
+                        </button>
+
                     </div>
                 </div>
 
@@ -135,14 +141,16 @@
                         <p class="card-text">Carne, bacon, ovo, queijo, alface,tomate e maionese caseira.</p>
                         <p class="preco-hamburguer">R$ 19,99</p>
                         
-                        <div>
-                            <button class="aumentar" onclick="decrement()">-</button>
-                            <input type="number" id="quantity" name="quantity" value="1" min="1"
-                                oninput="validateInput()">
-                            <button id="button" class="diminuir" onclick="increment()">+</button>
+                        <div class="div-card">
+                            <button data-produto-id="x-tudo" class="diminuir">-</button>
+                            <input type="number" class="form-control input-card" id="quantity" name="quantity" value="1"
+                                min="1">
+                            <button data-produto-id="x-tudo" class="aumentar">+</button>
                         </div>
 
-                        <button id="x-tudo" onclick="clicar()" class="btn btn-danger">adicinar ao carrinho</button>
+                        <button data-produto-id="x-tudo" class="btn btn-danger">adicinar ao carrinho
+                        </button>
+
                     </div>
                 </div>
 
@@ -153,14 +161,16 @@
                         <p class="card-text">Blend de carne prensada na chapa e queijo.</p>
                         <p class="preco-hamburguer">R$ 9,99</p>
                         
-                        <div>
-                            <button class="aumentar" onclick="decrement()">-</button>
-                            <input type="number" id="quantity" name="quantity" value="1" min="1"
-                                oninput="validateInput()">
-                            <button id="button" class="diminuir" onclick="increment()">+</button>
+                        <div class="div-card">
+                            <button data-produto-id="x-smash" class="diminuir">-</button>
+                            <input type="number" class="form-control input-card" id="quantity" name="quantity" value="1"
+                                min="1">
+                            <button data-produto-id="x-smash" class="aumentar">+</button>
                         </div>
 
-                        <button id="X-Smash" onclick="clicar()" class="btn btn-danger">adicinar ao carrinho</button>
+                        <button data-produto-id="x-smash" class="btn btn-danger">adicinar ao carrinho
+                        </button>
+
                     </div>
                 </div>
 
@@ -172,15 +182,16 @@
                         <p class="card-text">Carne, duplo queijo e maionese caseira.</p>
                         <p class="preco-hamburguer">R$ 12,99</p>
                         
-                        <div>
-                            <button class="aumentar" onclick="decrement()">-</button>
-                            <input type="number" id="quantity" name="quantity" value="1" min="1"
-                                oninput="validateInput()">
-                            <button id="button" class="diminuir" onclick="increment()">+</button>
+                        <div class="div-card">
+                            <button data-produto-id="cheese-burguer" class="diminuir">-</button>
+                            <input type="number" class="form-control input-card" id="quantity" name="quantity" value="1"
+                                min="1">
+                            <button data-produto-id="cheese-burguer" class="aumentar">+</button>
                         </div>
 
-                        <button id="cheese-burguer" onclick="clicar()" class="btn btn-danger">adicinar ao
-                            carrinho</button>
+                        <button data-produto-id="cheese-burguer" class="btn btn-danger">adicinar ao carrinho
+                        </button>
+
                     </div>
                 </div>
 

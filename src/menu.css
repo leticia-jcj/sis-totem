@@ -37,6 +37,10 @@
   overflow: hidden;
 }
 
+.div-card {
+  display: flex;
+}
+
 .carrinho img {
   margin-right: 1rem;
 }
@@ -105,10 +109,6 @@ p.preco-hamburguer {
   font-size: 1.8rem;
 }
 
-label.label-card {
-  font-weight: 500;
-}
-
 button {
   width: 16rem;
 }
@@ -120,35 +120,34 @@ button.diminuir {
   background-color: var(--color-orange);
   width: 3rem;
   height: 2rem;
-  margin-bottom: 0.5rem;
+  margin-bottom: 0.7rem;
   border: none;
   border-radius: 8px;
-  color: #fff;
+  color: var(--color-white);
   font-size: 1.3rem;
   font-weight: bold;
-  
 }
 
-button.aumentar {
-  margin-left: 3rem;
+button.diminuir {
+  margin-left: 3.7rem;
 }
 
-
-input {
-  /* border: 1px solid var(--color-orange); */
+.div-card > input {
   border: none;
   border-bottom: 2px solid var(--color-orange);
-  width: 3vw;
+  width: 4.5vw;
   height: 3vh;
-  margin-left: .2rem;
-  margin-right: .2rem;
-  border-radius: 6px;
+  margin-left: .5rem;
+  margin-right: .5rem;
   text-align: center;
   font-size: 1.5rem;
   font-weight: 500;
   color: var(--color-orange);
-  outline: 0;
+  /*outline: 0;*/
+}
 
+.div-card > input:focus {
+  border: none;
 }
 
 input[type="number"]::-webkit-inner-spin-button,
@@ -161,10 +160,6 @@ input[type="number"] {
   -moz-appearance: textfield; /* Firefox */
 }
 
-/* aside {
-  width: 25vw;
-} */
-
 footer > a {
   padding: 1rem;
 }
@@ -175,12 +170,4 @@ footer > a {
   h3 {
       color: aqua;
   }
-} */
-
-/* #teste {
-  background-color: blue;
-  color: #fff;
-  width: 300px;
-  height: 300px;
-  display: block;
 } */
