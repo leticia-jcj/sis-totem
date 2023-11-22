@@ -1,6 +1,7 @@
 const lanchesDisponiveis = [
     //hamburguer
     {
+        img: '',
         id: 'x-bacon',
         titulo: "X-Bacon",
         descricao: "Carne, bacon, queijo, alface e tomate.",
@@ -206,8 +207,6 @@ const lanchesDisponiveis = [
 const carrinho = pegaItensDoLocalStorage()
 
 const todosOsbotoes = document.querySelectorAll('button')
-
-
 
 
 

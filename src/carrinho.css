@@ -1,18 +1,18 @@
 
 .cancelar-finalizar,
-.div-principal,
+.item-pedido,
 .total {
     display: flex;
 }
 
-.div-principal {
+.item-pedido {
     justify-content: space-around;
     align-items: center;
     margin-top: 1rem;
     background-color: rgba(128, 128, 128, 0.082);
 }
 
-.div-principal p {
+.item-pedido p {
     font-size: 1.5rem;
 }
 
