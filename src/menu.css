@@ -129,25 +129,26 @@ button.diminuir {
 }
 
 button.diminuir {
-  margin-left: 3.7rem;
+  margin-left: 1rem;
 }
 
-.div-card > input {
+.div-card input {
   border: none;
-  border-bottom: 2px solid var(--color-orange);
-  width: 4.5vw;
-  height: 3vh;
+  width: 8vw;
+  height: 5vh;
   margin-left: .5rem;
   margin-right: .5rem;
   text-align: center;
   font-size: 1.5rem;
   font-weight: 500;
   color: var(--color-orange);
-  /*outline: 0;*/
+  outline: 0;
 }
 
-.div-card > input:focus {
-  border: none;
+.div-card input:focus {
+  color: #ff914d;
+  box-shadow: 0 0 0 0;
+  outline: 0;
 }
 
 input[type="number"]::-webkit-inner-spin-button,
@@ -157,10 +158,11 @@ input[type="number"]::-webkit-outer-spin-button {
 }
 
 input[type="number"] {
-  -moz-appearance: textfield; /* Firefox */
+  -moz-appearance: textfield;
+  /* Firefox */
 }
 
-footer > a {
+footer>a {
   padding: 1rem;
 }
 
