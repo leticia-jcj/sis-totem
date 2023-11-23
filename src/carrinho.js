@@ -62,7 +62,7 @@ function cancelarPedido() {
     if (carrinho.length > 0) {
         limparCarrinho()
         alert("Pedido cancelado!")
-        window.location.href = "/";
+        window.location.href = "../";
     }
 }
 
