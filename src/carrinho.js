@@ -84,7 +84,7 @@ function finalizarCompra() {
     setTimeout( () => {
         abreFechaModal()
         limparCarrinho()
-        window.location.href = "/";
+        window.location.href = "../";
         
     },8000)
     

@@ -58,7 +58,7 @@ header::before {
   position: absolute;
   top: 0;
   left: 0;
-  background-image: url("/assets/img/banner-simples.png");
+  background-image: url("../assets/img/banner-simples.png");
   background-size: cover;
   background-position: center;
   width: 100%;
